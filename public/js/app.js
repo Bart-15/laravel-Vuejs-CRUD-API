@@ -1965,6 +1965,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var Toast = sweetalert2__WEBPACK_IMPORTED_MODULE_2___default().mixin({
+  //when firing the toast, the first window closes automatically
+  toast: true,
+  position: 'top-end',
+  showConfirmButton: false,
+  timer: 3000
+});
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -1986,13 +1993,6 @@ __webpack_require__.r(__webpack_exports__);
     //Add Employee
     addEmployee: function addEmployee() {
       this.form.post('api/employee').then(function () {
-        var Toast = sweetalert2__WEBPACK_IMPORTED_MODULE_2___default().mixin({
-          //when firing the toast, the first window closes automatically
-          toast: true,
-          position: 'top-end',
-          showConfirmButton: false,
-          timer: 3000
-        });
         Toast.fire({
           icon: 'success',
           title: 'Employee Added Successfully!'
@@ -2046,13 +2046,6 @@ __webpack_require__.r(__webpack_exports__);
 
       this.form.put('api/employee/' + this.form.id) //If Success then proceed
       .then(function () {
-        var Toast = sweetalert2__WEBPACK_IMPORTED_MODULE_2___default().mixin({
-          //when firing the toast, the first window closes automatically
-          toast: true,
-          position: 'top-end',
-          showConfirmButton: false,
-          timer: 3000
-        });
         Toast.fire({
           icon: 'success',
           title: 'Employee Updated Successfully!'

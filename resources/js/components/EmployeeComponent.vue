@@ -111,6 +111,12 @@ import $ from "jquery";
 import Form from 'vform'
 import Swal from 'sweetalert2'
 import axios from 'axios'
+    const Toast = Swal.mixin({ //when firing the toast, the first window closes automatically
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000
+    });
 export default {
     data() {
         return {
@@ -135,12 +141,6 @@ export default {
          addEmployee() {
             this.form.post('api/employee')
             .then(() => {
-                const Toast = Swal.mixin({ //when firing the toast, the first window closes automatically
-                  toast: true,
-                  position: 'top-end',
-                  showConfirmButton: false,
-                  timer: 3000
-                });
                  Toast.fire({
                      icon:'success',
                   title: 'Employee Added Successfully!'
@@ -199,12 +199,6 @@ export default {
             this.form.put('api/employee/'+this.form.id)
             //If Success then proceed
             .then(() => {
-                const Toast = Swal.mixin({ //when firing the toast, the first window closes automatically
-                  toast: true,
-                  position: 'top-end',
-                  showConfirmButton: false,
-                  timer: 3000
-                });
                  Toast.fire({
                     icon:'success',
                     title: 'Employee Updated Successfully!'
@@ -213,7 +207,6 @@ export default {
                 $('#addEmployee').modal("hide")
                 this.form.reset();
             })
-
         }
     },
 
