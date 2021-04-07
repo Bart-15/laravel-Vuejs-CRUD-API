@@ -63864,8 +63864,8 @@ var render = function() {
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "row justify-content-center mt-5" }, [
-      _c("div", { staticClass: "col-sm-4 col-md-8 col-lg-18" }, [
-        _c("div", { staticClass: "card", attrs: { tyle: "width:18rem;" } }, [
+      _c("div", { staticClass: "col-sm-12 col-md-12 col-lg-12" }, [
+        _c("div", { staticClass: "card", attrs: { tyle: "width:24rem;" } }, [
           _c("div", { staticClass: "card-tools" }, [
             _c(
               "button",

@@ -2,8 +2,8 @@
     <div class="container employee">
         <h4 class="text-center">Laravel + Vue JS CRUP API</h4>
         <div class="row justify-content-center mt-5">
-            <div class="col-sm-4 col-md-8 col-lg-18">
-                <div class="card" tyle="width:18rem;">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="card" tyle="width:24rem;">
                     <div class="card-tools">
                         <button
                             class="btn btn-success float-right m-3"
