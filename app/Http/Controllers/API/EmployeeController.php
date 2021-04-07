@@ -15,9 +15,9 @@ class EmployeeController extends Controller
      */
     public function index()
     {
-        return  Employee::latest()->paginate(10);
+        return  Employee::latest()->paginate(20);
     }
-
+    
     /**
      * Show the form for creating a new resource.
      *
