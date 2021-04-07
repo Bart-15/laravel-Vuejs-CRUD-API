@@ -3,7 +3,7 @@
         <h4 class="text-center">Laravel + Vue JS CRUP API</h4>
         <div class="row justify-content-center mt-5">
             <div class="col-sm-4 col-md-8 col-lg-18">
-                <div class="card" tyle="width: 18rem;">
+                <div class="card" tyle="width:18rem;">
                     <div class="card-tools">
                         <button
                             class="btn btn-success float-right m-3"
@@ -18,7 +18,7 @@
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">First</th>
-                                    <th scope="col">Last</th>
+                                    <th scope="col">Lastname</th>
                                     <th scope="col">Created</th>
                                     <th>Actions</th>
                                 </tr>
